@@ -84,14 +84,25 @@ En la consola de vs escribe **php artisan tinker**
 ### Invocar un modelo
 Antes de usarlo debes invocarlo esto se hace con **use** ***Ruta del modelo***
 >Por ejemplo **use** ***App\Models\Continent***
-### Consultar todas las instancias de un modelo
+### Consultas
+
+#### Consultar todas las instancias de un modelo
 En la consola de tinker escribe ***nombre del modelo***::**all()**
-### Consultar instancias con un filtro
-En la consola de tinker escribe ***nombre del modelo***::**where** ***('','')*****->** ***En este punto oprime enter para indicar lo que haras con la informacion de la consulta*** ahora saldran tres puntos enfrente de ellos escribe lo que deseas hacer con el resultado ***(Las opciones estan en "Builder")***
+#### Consultar instancias con un filtro
+En la consola de tinker escribe ***nombre del modelo*****::****where** ***('campo','operacion','comparacion')*****->** lo que haras con el resultado se define con el "Builder"
 >Ejemplo ***Country::where('region_id','=',2)->***
-### Establecer los atributos consultados
+#### Consulta con filtro multiple
+Escribe ***Nombre del modelo*****::wherein*****('Campo',[arreglo cuyos datos seran seleccionados])*****->** lo que haras con el resultado se define por el "Builder"
+>Ejemplo Country::wherein('region_id',[1,2])->
+#### Consultar los atributos
 Escribe ***Modelo***::**select( ***Datos buscados*** )->** recuerda que lo que haras con esa informacion se define con el "Builder"
 >Por ejemplo Country::select('name','national_day')->
+#### Consultar por clave primaria
+Escribe ***Nombre del modelo*****::find( ***numero*** )**
+>Por ejemplo ***Country::find(55)***
+#### Consultar por rango
+Escribe ***Nombre del modelo*****::wherebetween*****('campo','rango')*****->** Lo que haras con el resultado se define con el "Builder".
+>Por ejemplo ***Country::wherebetween('national_day',['1800-01-01','1899-12-31'])->***
 #### Opciones del Builder
 ##### Mostrar el resultado del filtro
 Despues de darle a enter en la consulta y con la consola mostrando **...** escribe **get()**
