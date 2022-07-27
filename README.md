@@ -98,7 +98,7 @@ En la consola de tinker escribe ***nombre_del_modelo***__::__**where** ***('camp
 Escribe ***Nombre del modelo***__::wherein__***('Campo',[arreglo cuyos datos seran seleccionados])***__->__ lo que haras con el resultado se define por el "Builder"
 >Ejemplo `Country::wherein('region_id',[1,2])->`
 #### Consultar los atributos
-Escribe ***Modelo***::**select( ***Datos buscados*** )->** recuerda que lo que haras con esa informacion se define con el "Builder"
+Escribe ***Nombre_del_modelo***__::select(__***Datos buscados***__)->__ recuerda que lo que haras con esa informacion se define con el "Builder"
 >Por ejemplo `Country::select('name','national_day')->`
 #### Consultar por clave primaria
 Escribe ***Nombre del modelo***__::find(__***numero***__)__
