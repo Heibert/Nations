@@ -19,11 +19,11 @@ Abre XAMPP y enciende MYSQL
 En la consola escribe **composer --version**
 ### 6. Revisa las credenciales del equipo
 Abre el *Administrador de credenciales* y revisa si tu cuenta de GitHub esta abierta.
-> En caso de no estar otra **ELIMINALA**
-# <p align="center">Crea un proyecto</p>
-### Crea tu proyecto
+> En caso de que haya otra **ELIMINALA**
+# <p align="center">Inicia tu proyecto</p>
+## Crea tu proyecto
 En la consola escribe **composer create-project laravel/laravel** ***Nombre del proyecto***
-# <p align="center">Descarga tu proyecto</p>
+## Descarga tu proyecto
 ### 1. Ingresa a tu directorio
 En la consola escribe **cd** ***Tu directorio*** y deberias quedar ubicado en el
 > Por ejemplo *cd C:\Users\APRENDIZ\Documents\Heibert*
@@ -61,19 +61,19 @@ En la cosola escribe **php artisan db:seed**
 ### 5. Ejecuta el servidor
 En la consola escribe **php artisan serve**
 >Te deberia dar una direccion la cual al clickearla te abre tu pagina por ejemplo *http://127.0.0.1:8000*
-# # <p align="center">Guardar en GitHub</p>
+# <p align="center">Guardar en GitHub</p>
 ### 1. Define tu nombre de usuario 
 Escribe en la consola **git config --global user.name** ***"Usuario"***
 ### 2. Define tu correo
 Escribe en la consola **git config --global user.email** ***"Email Usuario"***
 ### 3. Inicializa el proyecto en git
 Escribe **git init**
-### 3. Confirma los cambios
+### 4. Confirma los cambios
 En la consola **git add .**
-### 4. Guarda de forma local tus cambios
+### 5. Guarda de forma local tus cambios
 En la consola **git commit -m** ***"Un mensaje"***
 >Un ejemplo **git commit -m rutas**
-### 5. Subir los cambios
+### 6. Subir los cambios
 En la consola **git push origin** ***Rama a la que lo subiras***
 >Un ejemplo **git push origin master** en caso de querer subirlo a otro repositorio usa **git remote -v** te mostrara a que git esta conectado, si quieres usar otro escribe el nombre de la rama
 # <p align="center">Laravel</p>
@@ -85,7 +85,7 @@ En la consola escribe **php artisan make:model** ***Nombre del modelo***
 En la consola de vs escribe **php artisan tinker**
 ### Invocar un modelo
 Antes de usarlo debes invocarlo esto se hace con **use** ***Ruta del modelo***
->Por ejemplo `use App\Models\Continent`
+>Por ejemplo **use App\Models\Continent**
 ## Consultas
 - [Consultar todo](#consultar-todas-las-instancias-de-un-modelo)
 - [Consultar con filtro](#consultar-instancias-con-un-filtro)
@@ -109,7 +109,7 @@ En la consola de tinker escribe ***Nombre_del_modelo***__::select(__***Datos bus
 En la consola de tinker escribe ***Nombre_del_modelo***__::find(__***numero***__)__
 >Por ejemplo `Country::find(55)`
 ### Consultar por rango
-En la consola de tinker escribe ***Nombre_del_modelo***__::wherebetween(__***'campo','rango'***__)->__ lo que haras con el resultado se define con el "Builder".
+En la consola de tinker escribe ***Nombre_del_modelo***__::wherebetween(__***'campo','rango'***__)->__ lo que haras con el resultado se define con el "Builder"
 >Por ejemplo `Country::wherebetween('national_day',['1800-01-01','1899-12-31'])->`
 ### Consultar por null
 En la consola de tinker escribe ***Nombre_del_modelo***__::wherenull('__***campo***__')->__ recuerda que lo que haras con esa informacion se define con el "Builder"
