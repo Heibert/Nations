@@ -122,4 +122,4 @@ En la consola **git commit -m** ***"Un mensaje"***
 >Un ejemplo **git commit -m rutas**
 ### 6. Subir los cambios
 En la consola **git push origin** ***Rama a la que lo subiras***
->Un ejemplo **git push origin master** en caso de querer subirlo a otro repositorio usa **git remote -v** te mostrara a que git esta conectado, si quieres usar otro escribe el nombre de la rama
+>Un ejemplo **git push origin master** en caso de querer subirlo a otro repositorio usa **git remote -v** te mostrara a que git esta conectado, si quieres usar otra escribe el nombre de la rama
