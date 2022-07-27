@@ -75,7 +75,7 @@ En la consola **git commit -m** ***"Un mensaje"***
 >Un ejemplo **git commit -m rutas**
 ### 5. Subir los cambios
 En la consola **git push origin** ***Rama a la que lo subiras***
->Un ejemplo **git push origin master** en caso de querer subirlo a otro repositorio usa **git remote -v** te mostrara a que git esta conectado, si quieres usar otro escribre ****
+>Un ejemplo **git push origin master** en caso de querer subirlo a otro repositorio usa **git remote -v** te mostrara a que git esta conectado, si quieres usar otro escribe el nombre de la rama
 # <p align="center">Laravel</p>
 ### Creacion de modelos
 En la consola escribre **php artisan make:model** ***Nombre del modelo***
