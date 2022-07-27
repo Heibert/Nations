@@ -94,32 +94,32 @@ Antes de usarlo debes invocarlo esto se hace con **use** ***Ruta del modelo***
 - [Consultar por clave primaria](#consultar-por-clave-primaria)
 - [Consultar por rango](#consultar-por-rango)
 - [Consultar por null](#consultar-por-null)
-- [Unir consultar](#conectar-consultas)
 ### Consultar todas las instancias de un modelo
 En la consola de tinker escribe ***nombre_del_modelo***__::__**all()**
 ### Consultar instancias con un filtro
 En la consola de tinker escribe ***nombre_del_modelo***__::__**where** ***('campo','operacion','comparacion')*****->** lo que haras con el resultado se define con el "Builder"
 >Ejemplo `Country::where('region_id','=',2)->`
 ### Consulta con filtro multiple
-Escribe ***Nombre_del_modelo***__::wherein__***('Campo',[arreglo cuyos datos seran seleccionados])***__->__ lo que haras con el resultado se define por el "Builder"
+En la consola de tinker escribe ***Nombre_del_modelo***__::wherein__***('Campo',[arreglo cuyos datos seran seleccionados])***__->__ lo que haras con el resultado se define por el "Builder"
 >Ejemplo `Country::wherein('region_id',[1,2])->`
 ### Consultar los atributos
-Escribe ***Nombre_del_modelo***__::select(__***Datos buscados***__)->__ recuerda que lo que haras con esa informacion se define con el "Builder"
+En la consola de tinker escribe ***Nombre_del_modelo***__::select(__***Datos buscados***__)->__ recuerda que lo que haras con esa informacion se define con el "Builder"
 >Por ejemplo `Country::select('name','national_day')->`
 ### Consultar por clave primaria
-Escribe ***Nombre_del_modelo***__::find(__***numero***__)__
+En la consola de tinker escribe ***Nombre_del_modelo***__::find(__***numero***__)__
 >Por ejemplo `Country::find(55)`
 ### Consultar por rango
-Escribe ***Nombre del modelo***__::wherebetween__***('campo','rango')***__->__ Lo que haras con el resultado se define con el "Builder".
+En la consola de tinker escribe ***Nombre_del_modelo***__::wherebetween(__***'campo','rango'***__)->__ lo que haras con el resultado se define con el "Builder".
 >Por ejemplo `Country::wherebetween('national_day',['1800-01-01','1899-12-31'])->`
 ### Consultar por null
-***Nombre_del_modelo::wherenull('campo')->***
-### Conectar consultas
-Despues de una consulta escribes __or__***where('consulta')*** recuerda que puedes usar los otros tipos de consulta
+En la consola de tinker escribe ***Nombre_del_modelo::wherenull('campo')->*** recuerda que lo que haras con esa informacion se define con el "Builder"
 ## Opciones del Builder
 ### Mostrar el resultado del filtro
 Despues de darle a enter en la consulta y con la consola mostrando **...** escribe **get()**
 ### Contar los resultados
 Despues de darle a enter en la consulta y con la consola mostrando **...** escribe **count()**
+### Conectar consultas
+Despues de una consulta escribes __or__***where('consulta')*** recuerda que puedes usar los otros tipos de consulta
+---
 ### Salir de tinker
 Basta con escribir **exit**
