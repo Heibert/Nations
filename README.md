@@ -80,15 +80,21 @@ En la consola **git push origin** ***Rama a la que lo subiras***
 ### Creacion de modelos
 En la consola escribre **php artisan make:model** ***Nombre del modelo***
 >Se recomienda crearlos en singular y con mayuscula en su primera letra.
-## <p align="center">Eloquent -> Models</p>
+## Eloquent -> Models
 ### Abrir la consola de Tinker
 En la consola de vs escribe **php artisan tinker**
 ### Invocar un modelo
 Antes de usarlo debes invocarlo esto se hace con **use** ***Ruta del modelo***
 >Por ejemplo **use** ***App\Models\Continent***
----
 ## Consultas
-
+- [Consultar todo](#consultar-todas-las-instancias-de-un-modelo)
+- [Consultar con filtro](#consultar-instancias-con-un-filtro)
+- [Consultar con filtro multiple](#consulta-con-filtro-multiple)
+- [Consultar por atributos](#consultar-los-atributos)
+- [Consultar por clave primaria](#consultar-por-clave-primaria)
+- [Consultar por rango](#consultar-por-rango)
+- [Consultar por null](#consultar-por-null)
+- [Unir consultar](#conectar-consultas)
 ### Consultar todas las instancias de un modelo
 En la consola de tinker escribe ***nombre_del_modelo***__::__**all()**
 ### Consultar instancias con un filtro
