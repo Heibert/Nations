@@ -101,7 +101,7 @@ Escribe ***Nombre del modelo***__::wherein__***('Campo',[arreglo cuyos datos ser
 Escribe ***Nombre_del_modelo***__::select(__***Datos buscados***__)->__ recuerda que lo que haras con esa informacion se define con el "Builder"
 >Por ejemplo `Country::select('name','national_day')->`
 #### Consultar por clave primaria
-Escribe ***Nombre del modelo***__::find(__***numero***__)__
+Escribe **Nombre del modelo**__::find(__***numero***__)__
 >Por ejemplo `Country::find(55)`
 #### Consultar por rango
 Escribe ***Nombre del modelo***__::wherebetween__***('campo','rango')***__->__ Lo que haras con el resultado se define con el "Builder".
