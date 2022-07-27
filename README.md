@@ -109,7 +109,7 @@ Escribe ***Nombre del modelo*****::wherebetween*****('campo','rango')*****->** L
 ### Consultar por null
 ***Nombre_del_modelo::wherenull('campo')->***
 ### Conectar consultas
-Despues de una consulta escribes __or__ ***where*** ´codigoooo´
+Despues de una consulta escribes __or__***where*** `codigoooo`
 #### Opciones del Builder
 ##### Mostrar el resultado del filtro
 Despues de darle a enter en la consulta y con la consola mostrando **...** escribe **get()**
