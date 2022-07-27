@@ -120,6 +120,6 @@ Despues de darle a enter en la consulta y con la consola mostrando **...** escri
 Despues de darle a enter en la consulta y con la consola mostrando **...** escribe **count()**
 ### Conectar consultas
 Despues de una consulta escribes __or__***where('consulta')*** recuerda que puedes usar los otros tipos de consulta
----
+***
 ### Salir de tinker
 Basta con escribir **exit**
