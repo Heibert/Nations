@@ -19,6 +19,10 @@ En la consola escribe **composer --version**
 ### 6. Revisa las credenciales del equipo
 Abre el *Administrador de credenciales* y revisa si tu cuenta de GitHub esta abierta.
 > En caso de no estar otra **ELIMINALA**
+### 7. Define tu nombre de usuario 
+Escribe en la consola **git config --global user.name** ***"Usuario"***
+### 8. Define tu correo
+Escribe en la consola **git config --global user.email** ***"Email Usuario"***
 # <p align="center">Crea un proyecto</p>
 ### Crea tu proyecto
 En la consola escribe **composer create-project laravel/laravel** ***Nombre del proyecto***
