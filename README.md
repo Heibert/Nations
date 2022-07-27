@@ -3,6 +3,7 @@
 - [Descarga tu proyecto](#descarga-tu-proyecto)
 - [Configura el proyecto](#configura-tu-proyecto)
 - [Guardar en GitHub](#guarda-en-github)
+- [Manejo de Laravel](#laravel)
 # <p align="center">Configuracion de entorno</p>
 ### 1. Borra tu proyecto local
 ### 2. Verificación de PHP 
@@ -19,10 +20,6 @@ En la consola escribe **composer --version**
 ### 6. Revisa las credenciales del equipo
 Abre el *Administrador de credenciales* y revisa si tu cuenta de GitHub esta abierta.
 > En caso de no estar otra **ELIMINALA**
-### 7. Define tu nombre de usuario 
-Escribe en la consola **git config --global user.name** ***"Usuario"***
-### 8. Define tu correo
-Escribe en la consola **git config --global user.email** ***"Email Usuario"***
 # <p align="center">Crea un proyecto</p>
 ### Crea tu proyecto
 En la consola escribe **composer create-project laravel/laravel** ***Nombre del proyecto***
@@ -65,11 +62,19 @@ En la cosola escribe **php artisan db:seed**
 En la consola escribe **php artisan serve**
 >Te deberia dar una direccion la cual al clickearla te abre tu pagina por ejemplo *http://127.0.0.1:8000*
 # Guarda en GitHub
-### 1. Confirma los cambios
+### 1. Define tu nombre de usuario 
+Escribe en la consola **git config --global user.name** ***"Usuario"***
+### 2. Define tu correo
+Escribe en la consola **git config --global user.email** ***"Email Usuario"***
+### 3. Confirma los cambios
 En la consola **git add .**
-### 2. Guarda de forma local tus cambios
+### 4. Guarda de forma local tus cambios
 En la consola **git commit -m** ***Un mensaje***
 >Un ejemplo **git commit -m rutas**
-### 3. Subir los cambios
+### 5. Subir los cambios
 En la consola **git push origin** ***Rama a la que lo subiras***
 >Un ejemplo **git push origin master** en caso de querer subirlo a otro repositorio usa **git remote -v** te mostrara a que git esta conectado, si quieres usar otro escribre ****
+# <p align="center">Laravel</p>
+### Creacion de modelos
+En la consola escribre **php artisan make:model** ***Nombre del modelo***
+>Se recomienda crearlos en singular dado que cada modelo representa una instancia
