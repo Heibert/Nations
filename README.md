@@ -66,10 +66,12 @@ En la consola escribe **php artisan serve**
 Escribe en la consola **git config --global user.name** ***"Usuario"***
 ### 2. Define tu correo
 Escribe en la consola **git config --global user.email** ***"Email Usuario"***
+### 3. Inicializa el proyecto en git
+Escribe **git init**
 ### 3. Confirma los cambios
 En la consola **git add .**
 ### 4. Guarda de forma local tus cambios
-En la consola **git commit -m** ***Un mensaje***
+En la consola **git commit -m** ***"Un mensaje"***
 >Un ejemplo **git commit -m rutas**
 ### 5. Subir los cambios
 En la consola **git push origin** ***Rama a la que lo subiras***
@@ -88,12 +90,12 @@ Antes de usarlo debes invocarlo esto se hace con **use** ***Ruta del modelo***
 ### Consultas
 
 #### Consultar todas las instancias de un modelo
-En la consola de tinker escribe ***nombre del modelo***__::__**all()**
+En la consola de tinker escribe ***nombre_del_modelo***__::__**all()**
 #### Consultar instancias con un filtro
-En la consola de tinker escribe ***nombre_del_modelo*** **::** **where** ***('campo','operacion','comparacion')*****->** lo que haras con el resultado se define con el "Builder"
+En la consola de tinker escribe ***nombre_del_modelo***__::__**where** ***('campo','operacion','comparacion')*****->** lo que haras con el resultado se define con el "Builder"
 >Ejemplo ***Country::where('region_id','=',2)->***
 #### Consulta con filtro multiple
-Escribe ***Nombre del modelo*****::wherein*****('Campo',[arreglo cuyos datos seran seleccionados])*****->** lo que haras con el resultado se define por el "Builder"
+Escribe ***Nombre del modelo***__::wherein__***('Campo',[arreglo cuyos datos seran seleccionados])***__->__ lo que haras con el resultado se define por el "Builder"
 >Ejemplo Country::wherein('region_id',[1,2])->
 #### Consultar los atributos
 Escribe ***Modelo***::**select( ***Datos buscados*** )->** recuerda que lo que haras con esa informacion se define con el "Builder"
@@ -106,6 +108,8 @@ Escribe ***Nombre del modelo*****::wherebetween*****('campo','rango')*****->** L
 >Por ejemplo ***Country::wherebetween('national_day',['1800-01-01','1899-12-31'])->***
 ### Consultar por null
 ***Nombre_del_modelo::wherenull('campo')->***
+### Conectar consultas
+Despues de una consulta escribes __or__ ***where*** ´codigoooo´
 #### Opciones del Builder
 ##### Mostrar el resultado del filtro
 Despues de darle a enter en la consulta y con la consola mostrando **...** escribe **get()**
