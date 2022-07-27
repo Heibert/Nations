@@ -5,89 +5,89 @@
 - [Guardar en GitHub](#guarda-en-github)
 - [Manejo de Laravel](#laravel)
 # <p align="center">Configuracion de entorno</p>
-### 1. Borra tu proyecto local
-### 2. Verificación de PHP 
+## 1. Borra tu proyecto local
+## 2. Verificación de PHP 
 En la consola escribe **php -v**
 > Si el resultado es **8.0** o mayor todo es correcto, en caso de no serlo reinstala **XAMPP**
-### 3. Verifica tu version de GitHub
+## 3. Verifica tu version de GitHub
 En la consola escribe **git --version** 
 > Tu version deberia ser superior a **2.2**
-### 4. Verificar MYSQL
+## 4. Verificar MYSQL
 Abre XAMPP y enciende MYSQL 
 > En caso de error ve a **config/my.ini** y cambia sus **port=XXXX** por otros
-### 5. Verifica tu version de Composer
+## 5. Verifica tu version de Composer
 En la consola escribe **composer --version**
-### 6. Revisa las credenciales del equipo
+## 6. Revisa las credenciales del equipo
 Abre el *Administrador de credenciales* y revisa si tu cuenta de GitHub esta abierta.
 > En caso de no estar otra **ELIMINALA**
 # <p align="center">Crea un proyecto</p>
-### Crea tu proyecto
+## Crea tu proyecto
 En la consola escribe **composer create-project laravel/laravel** ***Nombre del proyecto***
 # <p align="center">Descarga tu proyecto</p>
-### 1. Ingresa a tu directorio
+## 1. Ingresa a tu directorio
 En la consola escribe **cd** ***Tu directorio*** y deberias quedar ubicado en el
 > Por ejemplo *cd C:\Users\APRENDIZ\Documents\Heibert*
-### 2. Clona tu proyecto
+## 2. Clona tu proyecto
 En la consola escribe **git clone** ***Tu directorio de GitHub***
 > Por ejemplo **git clone https://github.com/Heibert/PHP2465903.git**
-### 3. Ingresa a tu carpeta
+## 3. Ingresa a tu carpeta
 En la consola escribe **cd** ***Tu carpeta clonada***
 > Por ejemplo **cd PHP2465903** *Si no recuerdas el nombre de la carpeta puedes usar **dir** para que la consola te muestre el contenido de la carpeta en la que te ubicas*
-### 4. Descarga la rama que uses
+## 4. Descarga la rama que uses
 En la consola escribe **git pull origin** ***Tu rama*** 
 >Un ejemplo seria **git pull origin evidencia_01** con **git pull origin -v** te muestra tus ramas
-### 5. Selecciona la rama que usaras
+## 5. Selecciona la rama que usaras
 En la consola **git checkout** ***Tu rama***
 >Un ejemplo seria **git checkout master**
-### 6. Instala composer
+## 6. Instala composer
 En la consola escribe **composer install**
 > Si te sale un error podria ser culpa del internet, vuelve a intentarlo
-### 7. Abre Visual Studio
+## 7. Abre Visual Studio
 En la consola escribe **code .** y deberia abrirse en tu carpeta
 # <p align="center">Configura tu proyecto</p>
-### 1. Crea tu archivo de configuracion .env
+## 1. Crea tu archivo de configuracion .env
 Copia el archivo **.env.example** y pegalo en tu mismo proyecto cambiale el nombre a la copia y nombralo como **.env**
-### 2. Configura tu .env
+## 2. Configura tu .env
 En la linea 11 estableces que tipo de BD usas y en la 14 el nombre o ruta de la BD
 > En la linea 11 a 16 del archivo .env estan las configuraciones de tu BD
-### 2. Crear una KEY en artisan
+## 2. Crear una KEY en artisan
 Abre una consola en VS y en ella escribe **php artisan key:generate**
 > No funcionara si no instalaste correctamente el *composer*
-### 3. Migra tus BD
+## 3. Migra tus BD
 En la consola escribe **php artisan migrate**
 > En caso de error revisa el tipo de BD que tienes en el .env
-### 4. Llena tus BD
+## 4. Llena tus BD
 En la cosola escribe **php artisan db:seed**
-### 5. Ejecuta el servidor
+## 5. Ejecuta el servidor
 En la consola escribe **php artisan serve**
 >Te deberia dar una direccion la cual al clickearla te abre tu pagina por ejemplo *http://127.0.0.1:8000*
 # Guarda en GitHub
-### 1. Define tu nombre de usuario 
+## 1. Define tu nombre de usuario 
 Escribe en la consola **git config --global user.name** ***"Usuario"***
-### 2. Define tu correo
+## 2. Define tu correo
 Escribe en la consola **git config --global user.email** ***"Email Usuario"***
-### 3. Inicializa el proyecto en git
+## 3. Inicializa el proyecto en git
 Escribe **git init**
-### 3. Confirma los cambios
+## 3. Confirma los cambios
 En la consola **git add .**
-### 4. Guarda de forma local tus cambios
+## 4. Guarda de forma local tus cambios
 En la consola **git commit -m** ***"Un mensaje"***
 >Un ejemplo **git commit -m rutas**
-### 5. Subir los cambios
+## 5. Subir los cambios
 En la consola **git push origin** ***Rama a la que lo subiras***
 >Un ejemplo **git push origin master** en caso de querer subirlo a otro repositorio usa **git remote -v** te mostrara a que git esta conectado, si quieres usar otro escribre ****
 # <p align="center">Laravel</p>
-### Creacion de modelos
+## Creacion de modelos
 En la consola escribre **php artisan make:model** ***Nombre del modelo***
 >Se recomienda crearlos en singular y con mayuscula en su primera letra.
-## <p align="center">Eloquent -> Models</p>
-### Abrir la consola de Tinker
+### <p align="center">Eloquent -> Models</p>
+## Abrir la consola de Tinker
 En la consola de vs escribe **php artisan tinker**
-### Invocar un modelo
+## Invocar un modelo
 Antes de usarlo debes invocarlo esto se hace con **use** ***Ruta del modelo***
 >Por ejemplo **use** ***App\Models\Continent***
 ---
-### Consultas
+## Consultas
 
 #### Consultar todas las instancias de un modelo
 En la consola de tinker escribe ***nombre_del_modelo***__::__**all()**
@@ -95,25 +95,25 @@ En la consola de tinker escribe ***nombre_del_modelo***__::__**all()**
 En la consola de tinker escribe ***nombre_del_modelo***__::__**where** ***('campo','operacion','comparacion')*****->** lo que haras con el resultado se define con el "Builder"
 >Ejemplo `Country::where('region_id','=',2)->`
 #### Consulta con filtro multiple
-Escribe ***Nombre del modelo***__::wherein__***('Campo',[arreglo cuyos datos seran seleccionados])***__->__ lo que haras con el resultado se define por el "Builder"
+Escribe ***Nombre_del_modelo***__::wherein__***('Campo',[arreglo cuyos datos seran seleccionados])***__->__ lo que haras con el resultado se define por el "Builder"
 >Ejemplo `Country::wherein('region_id',[1,2])->`
 #### Consultar los atributos
 Escribe ***Nombre_del_modelo***__::select(__***Datos buscados***__)->__ recuerda que lo que haras con esa informacion se define con el "Builder"
 >Por ejemplo `Country::select('name','national_day')->`
 #### Consultar por clave primaria
-Escribe **Nombre del modelo**__::find(__***numero***__)__
+Escribe ***Nombre_del_modelo***__::find(__***numero***__)__
 >Por ejemplo `Country::find(55)`
 #### Consultar por rango
 Escribe ***Nombre del modelo***__::wherebetween__***('campo','rango')***__->__ Lo que haras con el resultado se define con el "Builder".
 >Por ejemplo `Country::wherebetween('national_day',['1800-01-01','1899-12-31'])->`
-### Consultar por null
+## Consultar por null
 ***Nombre_del_modelo::wherenull('campo')->***
-### Conectar consultas
+## Conectar consultas
 Despues de una consulta escribes __or__***where('consulta')*** recuerda que puedes usar los otros tipos de consulta
-#### Opciones del Builder
-##### Mostrar el resultado del filtro
+### Opciones del Builder
+#### Mostrar el resultado del filtro
 Despues de darle a enter en la consulta y con la consola mostrando **...** escribe **get()**
-##### Contar los resultados
+#### Contar los resultados
 Despues de darle a enter en la consulta y con la consola mostrando **...** escribe **count()**
-### Salir de tinker
+## Salir de tinker
 Basta con escribir **exit**
