@@ -61,7 +61,7 @@ En la cosola escribe **php artisan db:seed**
 ### 5. Ejecuta el servidor
 En la consola escribe **php artisan serve**
 >Te deberia dar una direccion la cual al clickearla te abre tu pagina por ejemplo *http://127.0.0.1:8000*
-# Guarda en GitHub
+# # <p align="center">Guardar en GitHub</p>
 ### 1. Define tu nombre de usuario 
 Escribe en la consola **git config --global user.name** ***"Usuario"***
 ### 2. Define tu correo
@@ -119,7 +119,7 @@ Despues de darle a enter en la consulta y con la consola mostrando **...** escri
 ### Contar los resultados
 Despues de darle a enter en la consulta y con la consola mostrando **...** escribe **count()**
 ### Conectar consultas
-Despues de una consulta escribes __or__***where('consulta')*** recuerda que puedes usar los otros tipos de consulta
+Despues de una consulta escribes __orwhere(__***'consulta'***__)__ recuerda que puedes usar los otros tipos de consulta
 ***
 ### Salir de tinker
 Basta con escribir **exit**
