@@ -77,4 +77,25 @@ En la consola **git push origin** ***Rama a la que lo subiras***
 # <p align="center">Laravel</p>
 ### Creacion de modelos
 En la consola escribre **php artisan make:model** ***Nombre del modelo***
->Se recomienda crearlos en singular dado que cada modelo representa una instancia
+>Se recomienda crearlos en singular y con mayuscula en su primera letra.
+## <p align="center">Eloquent -> Models</p>
+### Abrir la consola de Tinker
+En la consola de vs escribe **php artisan tinker**
+### Invocar un modelo
+Antes de usarlo debes invocarlo esto se hace con **use** ***Ruta del modelo***
+>Por ejemplo **use** ***App\Models\Continent***
+### Consultar todas las instancias de un modelo
+En la consola de tinker escribe ***nombre del modelo***::**all()**
+### Consultar instancias con un filtro
+En la consola de tinker escribe ***nombre del modelo***::**where** ***('','')*****->** ***En este punto oprime enter para indicar lo que haras con la informacion de la consulta*** ahora saldran tres puntos enfrente de ellos escribe lo que deseas hacer con el resultado ***(Las opciones estan en "Builder")***
+>Ejemplo ***Country::where('region_id','=',2)->***
+### Establecer los atributos consultados
+Escribe ***Modelo***::**select( ***Datos buscados*** )->** recuerda que lo que haras con esa informacion se define con el "Builder"
+>Por ejemplo Country::select('name','national_day')->
+#### Opciones del Builder
+##### Mostrar el resultado del filtro
+Despues de darle a enter en la consulta y con la consola mostrando **...** escribe **get()**
+##### Contar los resultados
+Despues de darle a enter en la consulta y con la consola mostrando **...** escribe **count()**
+### Salir de tinker
+Basta con escribir **exit**
