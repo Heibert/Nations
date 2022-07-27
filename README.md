@@ -87,9 +87,9 @@ Antes de usarlo debes invocarlo esto se hace con **use** ***Ruta del modelo***
 ### Consultas
 
 #### Consultar todas las instancias de un modelo
-En la consola de tinker escribe ***nombre del modelo***::**all()**
+En la consola de tinker escribe ***nombre del modelo*****::****all()**
 #### Consultar instancias con un filtro
-En la consola de tinker escribe ***nombre del modelo*****::****where** ***('campo','operacion','comparacion')*****->** lo que haras con el resultado se define con el "Builder"
+En la consola de tinker escribe ***nombre del modelo*** **::** **where** ***('campo','operacion','comparacion')*****->** lo que haras con el resultado se define con el "Builder"
 >Ejemplo ***Country::where('region_id','=',2)->***
 #### Consulta con filtro multiple
 Escribe ***Nombre del modelo*****::wherein*****('Campo',[arreglo cuyos datos seran seleccionados])*****->** lo que haras con el resultado se define por el "Builder"
