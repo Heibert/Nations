@@ -1,9 +1,9 @@
 # Indice
 - [Configuracion de entorno](#configuracion-de-entorno)
-- [Descarga tu proyecto](#descarga-tu-proyecto)
+- [Iniciar un proyecto](#descarga-tu-proyecto)
 - [Configura el proyecto](#configura-tu-proyecto)
-- [Guardar en GitHub](#guarda-en-github)
 - [Manejo de Laravel](#laravel)
+- [Guardar en GitHub](#guarda-en-github)
 # <p align="center">Configuracion de entorno</p>
 ### 1. Borra tu proyecto local
 ### 2. Verificación de PHP 
@@ -61,21 +61,6 @@ En la cosola escribe **php artisan db:seed**
 ### 5. Ejecuta el servidor
 En la consola escribe **php artisan serve**
 >Te deberia dar una direccion la cual al clickearla te abre tu pagina por ejemplo *http://127.0.0.1:8000*
-# <p align="center">Guardar en GitHub</p>
-### 1. Define tu nombre de usuario 
-Escribe en la consola **git config --global user.name** ***"Usuario"***
-### 2. Define tu correo
-Escribe en la consola **git config --global user.email** ***"Email Usuario"***
-### 3. Inicializa el proyecto en git
-Escribe **git init**
-### 4. Confirma los cambios
-En la consola **git add .**
-### 5. Guarda de forma local tus cambios
-En la consola **git commit -m** ***"Un mensaje"***
->Un ejemplo **git commit -m rutas**
-### 6. Subir los cambios
-En la consola **git push origin** ***Rama a la que lo subiras***
->Un ejemplo **git push origin master** en caso de querer subirlo a otro repositorio usa **git remote -v** te mostrara a que git esta conectado, si quieres usar otro escribe el nombre de la rama
 # <p align="center">Laravel</p>
 ### Creacion de modelos
 En la consola escribe **php artisan make:model** ***Nombre del modelo***
@@ -123,3 +108,18 @@ Despues de crear una consulta y con la consola mostrando **...** escribe  __orwh
 ***
 ### Salir de tinker
 Basta con escribir **exit**
+# <p align="center">Guardar en GitHub</p>
+### 1. Define tu nombre de usuario 
+Escribe en la consola **git config --global user.name** ***"Usuario"***
+### 2. Define tu correo
+Escribe en la consola **git config --global user.email** ***"Email Usuario"***
+### 3. Inicializa el proyecto en git
+Escribe **git init**
+### 4. Confirma los cambios
+En la consola **git add .**
+### 5. Guarda de forma local tus cambios
+En la consola **git commit -m** ***"Un mensaje"***
+>Un ejemplo **git commit -m rutas**
+### 6. Subir los cambios
+En la consola **git push origin** ***Rama a la que lo subiras***
+>Un ejemplo **git push origin master** en caso de querer subirlo a otro repositorio usa **git remote -v** te mostrara a que git esta conectado, si quieres usar otro escribe el nombre de la rama
