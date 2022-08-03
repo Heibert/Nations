@@ -105,7 +105,17 @@ Despues de crear una consulta y con la consola mostrando **...** escribe **get()
 Despues de crear una consulta y con la consola mostrando **...** escribe **count()**
 ### Conectar consultas
 Despues de crear una consulta y con la consola mostrando **...** escribe  __orwhere(__***'consulta'***__)__ recuerda que puedes usar los otros tipos de consulta despues del "or"
-***
+### Ordenar consultas
+Despues de crear una consulta y con la consola mostrando **...** escribe __orderby('__***atributo***__','__***Forma en la que se ordenara***__')__
+>Por ejemplo `orderby('name', 'desc')->`
+## Metodos de relacion
+### 1 a N
+En el modelo escribe __hasMany('__***Modelo***__,'__***atributo relacionado***__')__
+>Por ejemplo return `$this->hasMany(Region::class,'continent_id');`
+### N a 1
+En el modelo escribe __belongsTo('__***Modelo***__,'__***atributo relacionado***__')__
+### N a N
+En el modelo escribe __belongsToMany('__***Modelo*** __','__***atributo relacionado***__','__******__)__
 ### Salir de tinker
 Basta con escribir **exit**
 # <p align="center">Guardar en GitHub</p>
