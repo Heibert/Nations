@@ -116,6 +116,8 @@ En el modelo escribe __hasMany('__***Modelo***__,'__***atributo relacionado***__
 En el modelo escribe __belongsTo('__***Modelo***__,'__***atributo relacionado***__')__
 ### N a N
 En el modelo escribe __belongsToMany('__***Modelo*** __','__***atributo relacionado***__','__******__)__
+### Ancestro nieto
+hasManyThrough
 ### Salir de tinker
 Basta con escribir **exit**
 # <p align="center">Guardar en GitHub</p>
