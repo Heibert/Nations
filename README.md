@@ -69,6 +69,7 @@ En la consola escribe **php artisan make:model** ***Nombre del modelo***
 >Se recomienda crearlos en singular y con mayuscula en su primera letra.
 ### Creacion de Controladores
 En la consola escribe **php artisan make:controller** ***Nombre del controlador***
+>Al final de este puedes agregar ***\--resource*** para que se genere con una CRUD
 ## Eloquent -> Models
 ### Abrir la consola de Tinker
 En la consola de vs escribe **php artisan tinker**
