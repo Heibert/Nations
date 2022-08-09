@@ -62,9 +62,13 @@ En la cosola escribe **php artisan db:seed**
 En la consola escribe **php artisan serve**
 >Te deberia dar una direccion la cual al clickearla te abre tu pagina por ejemplo *http://127.0.0.1:8000*
 # <p align="center">Laravel</p>
+### Ver las rutas
+En la consola **php artisan route:list**
 ### Creacion de modelos
 En la consola escribe **php artisan make:model** ***Nombre del modelo***
 >Se recomienda crearlos en singular y con mayuscula en su primera letra.
+### Creacion de Controladores
+En la consola escribe **php artisan make:controller** ***Nombre del controlador***
 ## Eloquent -> Models
 ### Abrir la consola de Tinker
 En la consola de vs escribe **php artisan tinker**
