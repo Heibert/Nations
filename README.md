@@ -113,6 +113,14 @@ Despues de crear una consulta y con la consola mostrando **...** escribe  __orwh
 ### Ordenar consultas
 Despues de crear una consulta y con la consola mostrando **...** escribe __orderby('__***atributo***__','__***Forma en la que se ordenara***__')__
 >Por ejemplo `orderby('name', 'desc')->`
+### Sumar valores de atributo
+Despues de crear una consulta y con la consola mostrando **...** escribe **sum('**___atributo___**')**
+### Promediar atributos
+Despues de crear una consulta y con la consola mostrando **...** escribe **avg('**___atributo___**')**
+### Minimo de un atributo
+Despues de crear una consulta y con la consola mostrando **...** escribe **min('**___atributo___**')**
+### Maximo de un atributo
+Despues de crear una consulta y con la consola mostrando **...** escribe **max('**___atributo___**')**
 ## Metodos de relacion
 ### 1 a N
 En el modelo escribe __hasMany('__***Modelo***__,'__***atributo relacionado***__')__
@@ -121,8 +129,6 @@ En el modelo escribe __hasMany('__***Modelo***__,'__***atributo relacionado***__
 En el modelo escribe __belongsTo('__***Modelo***__,'__***atributo relacionado***__')__
 ### N a N
 En el modelo escribe __belongsToMany('__***Modelo*** __','__***atributo relacionado***__','__******__)__
-### Ancestro nieto
-hasManyThrough
 ### Salir de tinker
 Basta con escribir **exit**
 # <p align="center">Guardar en GitHub</p>

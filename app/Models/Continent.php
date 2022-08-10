@@ -19,8 +19,8 @@ class Continent extends Model
     }
     public function paises(){
         return $this->hasManyThrough(
-            Region::class,
             Country::class,
+            Region::class,
             'continent_id',
             'region_id',
             'continent_id',
