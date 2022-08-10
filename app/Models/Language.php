@@ -20,7 +20,7 @@ class Language extends Model
             'country_languages',
             'language_id',
             'country_id'
-        );
+        )->withPivot('official');
     }
 
 }

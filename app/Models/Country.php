@@ -26,6 +26,6 @@ class Country extends Model
             'country_languages',
             'country_id',
             'language_id'
-        );
+        )->withPivot('official');
     }
 }
