@@ -70,6 +70,9 @@ En la consola escribe **php artisan make:model** ***Nombre del modelo***
 ### Creacion de Controladores
 En la consola escribe **php artisan make:controller** ***Nombre del controlador***
 >Al final de este puedes agregar ***\--resource*** para que se genere con una CRUD
+### Creacion de migraciones
+En la consola escribe **php artisan make:migration** ***Nombre de la migracion***
+>Su uso mas comun son tablas el codigo deberia ser asi **php artisan make:migration create**___Nombre___**table**
 ## Eloquent -> Models
 ### Abrir la consola de Tinker
 En la consola de vs escribe **php artisan tinker**
@@ -146,3 +149,7 @@ En la consola **git commit -m** ***"Un mensaje"***
 ### 6. Subir los cambios
 En la consola **git push origin** ***Rama a la que lo subiras***
 >Un ejemplo **git push origin master** en caso de querer subirlo a otro repositorio usa **git remote -v** te mostrara a que git esta conectado, si quieres usar otra escribe el nombre de la rama
+### Registro de commits
+En la consola **git log**
+### Registro de etiquetas
+En la consola **git tag**
