@@ -23,7 +23,7 @@ Abre el *Administrador de credenciales* y revisa si tu cuenta de GitHub esta abi
 # <p align="center">Inicia tu proyecto</p>
 ## Crea tu proyecto
 En la consola escribe **composer create-project laravel/laravel** ***Nombre del proyecto***
-## Descarga tu proyecto
+## Inicializar tu proyecto
 ### 1. Ingresa a tu directorio
 En la consola escribe **cd** ***Tu directorio*** y deberias quedar ubicado en el
 > Por ejemplo *cd C:\Users\APRENDIZ\Documents\Heibert*
@@ -42,7 +42,12 @@ En la consola **git checkout** ***Tu rama***
 ### 6. Instala composer
 En la consola escribe **composer install**
 > Si te sale un error podria ser culpa del internet, vuelve a intentarlo
-### 7. Abre Visual Studio
+### 7. Crea tu archivo env
+Usa el env.example solo copialo y borra su nombre dejando solo .env
+> Solo usa esto en local
+### 8. Crea tu key
+En la consola escribe **php artisan key:generate**
+### 9. Abre Visual Studio
 En la consola escribe **code .** y deberia abrirse en tu carpeta
 # <p align="center">Configura tu proyecto</p>
 ### 1. Crea tu archivo de configuracion .env
