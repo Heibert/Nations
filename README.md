@@ -69,6 +69,9 @@ En la consola escribe **php artisan serve**
 # <p align="center">Laravel</p>
 ### Ver las rutas
 En la consola **php artisan route:list**
+### Llenar bases de datos
+En la consola escribe **php artisan db:seed**
+>Si no se ejecuta correctamente usa **php artisan db:seed --class=**___TuSeeder___
 ### Creacion de modelos
 En la consola escribe **php artisan make:model** ***Nombre del modelo***
 >Se recomienda crearlos en singular y con mayuscula en su primera letra.
