@@ -1,6 +1,6 @@
 # Indice
 - [Configuracion de entorno](#configuracion-de-entorno)
-- [Iniciar un proyecto](#descarga-tu-proyecto)
+- [Iniciar un proyecto](#crea-tu-proyecto)
 - [Configura el proyecto](#configura-tu-proyecto)
 - [Manejo de Laravel](#laravel)
 - [Guardar en GitHub](#guardar-en-github)
@@ -69,12 +69,12 @@ En la consola escribe **php artisan serve**
 # <p align="center">Laravel</p>
 ### Ver las rutas
 En la consola **php artisan route:list**
-### Llenar bases de datos
-En la consola escribe **php artisan db:seed**
->Si no se ejecuta correctamente usa **php artisan db:seed --class=**___TuSeeder___
 ### Creacion de modelos
 En la consola escribe **php artisan make:model** ***Nombre del modelo***
 >Se recomienda crearlos en singular y con mayuscula en su primera letra.
+### Llenar bases de datos
+En la consola escribe **php artisan db:seed**
+>Si no se ejecuta correctamente usa **php artisan db:seed --class=**___TuSeeder___
 ### Creacion de Controladores
 En la consola escribe **php artisan make:controller** ***Nombre del controlador***
 >Al final de este puedes agregar ***\--resource*** para que se genere con una CRUD
